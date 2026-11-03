@@ -1,6 +1,18 @@
 ---
 name: loopa
-description: Loopa (read "lupa", Indonesian for "forget": forget hand-editing loops). Turns a folder of raw footage (one clip, many clips, sorted into subfolders or dumped loose and mixed) into as many distinct, seamlessly LOOPING viral shorts as the footage supports (TikTok, Reels, YouTube Shorts; each at its natural length, mostly 9–20 s, ceiling 30 s). Every video is a re-created edit, not a trim, with its own format, POV/angle, hook, narration, look, and sound, and every video loops end-to-start by default. It scans and groups footage automatically, offers a library of 15 viral formats (result-first, POV story, velocity, satisfying loop, transformation, listicle, myth vs fact, quiz, ASMR, montage, timelapse, count, ranked compilation, kinetic story, split screen), renders in batch with anti-duplicate checks, applies an anti AI-slop checklist, and does Indonesian voice-over dubbing (Kokoro) with karaoke captions. Use it whenever the user wants shorts/reels/konten sosmed from video, "re-create", "edit ulang", "recycle footage", "bikin video viral", "sebanyak-banyaknya video", kompilasi, looping videos, a folder of raw clips to process, a dubbing/narasi version, or says an existing edit looks low-effort, even if they don't name any of these tools.
+description: >-
+  Loopa (read "lupa", Indonesian for "forget": forget hand-editing loops). Turns a folder of raw footage (one
+  clip, many clips, sorted into subfolders or dumped loose and mixed) into as many distinct, seamlessly LOOPING
+  viral shorts as the footage supports (TikTok, Reels, YouTube Shorts; each at its natural length, mostly 9–20
+  s, ceiling 30 s). Every video is a re-created edit, not a trim, with its own format, POV/angle, hook,
+  narration, look, and sound, and every video loops end-to-start by default. It scans and groups footage
+  automatically, offers a library of 15 viral formats (result-first, POV story, velocity, satisfying loop,
+  transformation, listicle, myth vs fact, quiz, ASMR, montage, timelapse, count, ranked compilation, kinetic
+  story, split screen), renders in batch with anti-duplicate checks, applies an anti AI-slop checklist, and does
+  Indonesian voice-over dubbing (Kokoro) with karaoke captions. Use it whenever the user wants
+  shorts/reels/konten sosmed from video, "re-create", "edit ulang", "recycle footage", "bikin video viral",
+  "sebanyak-banyaknya video", kompilasi, looping videos, a folder of raw clips to process, a dubbing/narasi
+  version, or says an existing edit looks low-effort, even if they don't name any of these tools.
 ---
 
 # Loopa
