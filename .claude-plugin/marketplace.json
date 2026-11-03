@@ -1,13 +1,22 @@
 {
-  "name": "loopa",
+  "name": "aldhosutra",
   "owner": {
     "name": "Aldo Suhartono Putra",
     "url": "https://github.com/aldhosutra"
   },
   "metadata": {
-    "description": "Loopa: raw footage to seamlessly looping short videos (TikTok, Reels, Shorts). Read it \"lupa\": forget hand-editing loops."
+    "description": "Agent skills by aldhosutra. Both aldhosutra/supervise and aldhosutra/loopa publish this same marketplace, so adding either repo gives you every plugin."
   },
   "plugins": [
+    {
+      "name": "supervise",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/aldhosutra/supervise.git",
+        "path": "plugins/supervise"
+      },
+      "description": "Supervise other Claude Code or opencode sessions running in tmux until their goals are met — keep them moving, review what they produced, and escalate only what needs a human."
+    },
     {
       "name": "loopa",
       "source": "./plugins/loopa",

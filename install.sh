@@ -14,7 +14,7 @@
 #
 # Claude Code users may prefer the plugin route instead, which handles updates:
 #   /plugin marketplace add aldhosutra/loopa
-#   /plugin install loopa@loopa
+#   /plugin install loopa@aldhosutra
 set -euo pipefail
 
 REPO_URL="https://github.com/aldhosutra/loopa.git"

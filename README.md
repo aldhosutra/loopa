@@ -45,8 +45,12 @@ Claude Code can install it as a plugin instead, which `/plugin update` then keep
 
 ```text
 /plugin marketplace add aldhosutra/loopa
-/plugin install loopa@loopa
+/plugin install loopa@aldhosutra
 ```
+
+This is the shared `aldhosutra` marketplace, which also carries
+[supervise](https://github.com/aldhosutra/supervise). If you already added
+`aldhosutra/supervise`, skip the first line.
 
 Or in one line, which can also set up the optional tools:
 

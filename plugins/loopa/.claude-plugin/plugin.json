@@ -1,7 +1,7 @@
 {
   "name": "loopa",
   "description": "Turn a folder of raw footage into as many distinct, seamlessly looping short videos (TikTok, Reels, YouTube Shorts) as it supports. Music-first loops: the soundtrack is an N-bar cycle rendered tail-to-front and the video is cut to its bars, so picture and sound never show a seam. Includes footage scanning and grouping, 15 viral formats, AI frame generation for slow motion (RIFE), an anti AI-slop checklist, batch rendering with duplicate checks, and Indonesian voice-over (Kokoro).",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Aldo Suhartono Putra",
     "url": "https://github.com/aldhosutra"
