@@ -4,6 +4,9 @@
     "name": "Aldo Suhartono Putra",
     "url": "https://github.com/aldhosutra"
   },
+  "metadata": {
+    "description": "Loopa: raw footage to seamlessly looping short videos (TikTok, Reels, Shorts). Read it \"lupa\": forget hand-editing loops."
+  },
   "plugins": [
     {
       "name": "loopa",
