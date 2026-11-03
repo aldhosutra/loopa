@@ -1,0 +1,531 @@
+{
+ "moments": "moments.json",
+ "out_dir": "out",
+ "tmp_dir": "_tmp",
+ "videos": [
+  {
+   "id": "v01_result_diet",
+   "format": "result_first",
+   "angle": "diet",
+   "key": 0,
+   "seed": 0,
+   "opt": {
+    "kit": "bold",
+    "music": "upbeat",
+    "grade": "warm",
+    "hook_moment": "macro"
+   },
+   "copy": {
+    "hook": "nasi goreng\n*tanpa nasi*",
+    "reveal_big": "OAT",
+    "reveal_sub": "satu wajan, nasinya nggak ada",
+    "cta": "simpan,\nbuat sarapan besok"
+   },
+   "post": {
+    "caption": "nasi goreng, nasinya diganti oat. bumbunya tetap yang biasa.",
+    "hashtags": "#nasigorengoat #resepoat #masakansimpel"
+   }
+  },
+  {
+   "id": "v02_pov_diet",
+   "format": "pov_story",
+   "angle": "diet",
+   "key": -2,
+   "seed": 1,
+   "opt": {
+    "kit": "native",
+    "music": "lofi",
+    "grade": "film",
+    "hook_moment": "cabbage",
+    "hero_moment": "oat_toss"
+   },
+   "copy": {
+    "lines": [
+     "POV: lagi ngurangin nasi",
+     "tapi pengen nasi goreng. jadi...",
+     "bumbunya tetap yang biasa",
+     "kol, jagung, kecap, telur",
+     "oatnya masuk paling akhir"
+    ],
+    "freeze_word": "OAT.",
+    "punch": "KOK MIRIP?",
+    "cta": "mau resepnya?\nkomen *OAT*"
+   },
+   "post": {
+    "caption": "eksperimen nasi goreng tanpa nasi. kalian berani coba?",
+    "hashtags": "#nasigorengoat #diet #oat"
+   }
+  },
+  {
+   "id": "v03_velocity_bukan_nasi",
+   "format": "velocity",
+   "angle": "curiosity",
+   "key": 0,
+   "seed": 0,
+   "opt": {
+    "kit": "editorial",
+    "music": "phonk",
+    "grade": "teal",
+    "hook_moment": "pan_zoom"
+   },
+   "copy": {
+    "hook_small": "ini bukan",
+    "hook_big": "nasi.",
+    "reveal_small": "ini",
+    "reveal_big": "OAT.",
+    "reveal_sub": "dimasak kayak nasi goreng",
+    "cta": "*save*, coba sendiri"
+   },
+   "post": {
+    "caption": "dari jauh kelihatan kayak nasi goreng. bukan.",
+    "hashtags": "#oat #nasigoreng #velocityedit"
+   }
+  },
+  {
+   "id": "v04_loop_sangrai",
+   "format": "satisfying_loop",
+   "angle": "oat",
+   "key": 0,
+   "seed": 1,
+   "opt": {
+    "kit": "minimal",
+    "music": "ambient",
+    "grade": "clean",
+    "moments": [
+     "oat_toss",
+     "chili",
+     "corn",
+     "kecap",
+     "oat_in"
+    ]
+   },
+   "copy": {
+    "line": "sangrai dulu sampai kecokelatan"
+   },
+   "post": {
+    "caption": "langkah pertama nasi goreng oat.",
+    "hashtags": "#satisfying #oat #asmrmasak"
+   }
+  },
+  {
+   "id": "v05_loop_kol",
+   "format": "satisfying_loop",
+   "angle": "kol",
+   "key": -3,
+   "seed": 2,
+   "opt": {
+    "kit": "rounded",
+    "music": "lofi",
+    "grade": "film",
+    "moments": [
+     "cabbage",
+     "seasoning",
+     "egg",
+     "chili_fry",
+     "pan_zoom"
+    ]
+   },
+   "copy": {},
+   "post": {
+    "caption": "kol masuk wajan, slow motion.",
+    "hashtags": "#satisfying #slowmotion #masak"
+   }
+  },
+  {
+   "id": "v06_transform_oat",
+   "format": "transformation",
+   "angle": "proses",
+   "key": 0,
+   "seed": 0,
+   "opt": {
+    "kit": "grotesk",
+    "music": "cinematic",
+    "grade": "moody",
+    "before_moment": "raw_oats"
+   },
+   "copy": {
+    "before": "oat kering",
+    "after": "jadi nasi goreng",
+    "label_before": "SEBELUM",
+    "label_after": "SESUDAH"
+   },
+   "post": {
+    "caption": "oat kering → nasi goreng. satu wajan.",
+    "hashtags": "#beforeafter #oat #nasigorengoat"
+   }
+  },
+  {
+   "id": "v07_list_3hal",
+   "format": "listicle",
+   "angle": "edukasi",
+   "key": 2,
+   "seed": 1,
+   "opt": {
+    "kit": "rounded",
+    "music": "house",
+    "grade": "pop",
+    "hook_moment": "plate_wide",
+    "item_moments": [
+     "oat_toss",
+     "oat_in",
+     "seasoning"
+    ]
+   },
+   "copy": {
+    "title": "3 hal soal\n*nasi goreng oat*",
+    "items": [
+     "oatnya disangrai dulu,\nbiar teksturnya kering",
+     "masuknya paling akhir,\nsetelah telur",
+     "bumbunya sama kayak\nnasi goreng biasa"
+    ],
+    "cta": "simpan buat nanti"
+   },
+   "post": {
+    "caption": "catat 3 ini sebelum nyoba nasi goreng oat.",
+    "hashtags": "#tipsmasak #oat #nasigorengoat"
+   }
+  },
+  {
+   "id": "v08_mitos_fakta",
+   "format": "myth_fact",
+   "angle": "mitos",
+   "key": -1,
+   "seed": 2,
+   "opt": {
+    "kit": "grotesk",
+    "music": "cinematic",
+    "grade": "moody",
+    "myth_moment": "oat_pan",
+    "proof_moments": [
+     "oat_in",
+     "egg",
+     "kecap"
+    ]
+   },
+   "copy": {
+    "myth": "oat cuma buat\nbubur manis",
+    "fact": "oat bisa jadi\nnasi goreng",
+    "proof": [
+     "masuk setelah telur",
+     "bumbunya bumbu nasi goreng",
+     "kecapnya juga"
+    ],
+    "cta": "tim bubur\natau tim goreng?"
+   },
+   "post": {
+    "caption": "oat nggak harus manis.",
+    "hashtags": "#mitosfakta #oat #resepoat"
+   }
+  },
+  {
+   "id": "v09_quiz_tebak",
+   "format": "quiz",
+   "angle": "debat",
+   "key": 2,
+   "seed": 3,
+   "opt": {
+    "kit": "native",
+    "music": "phonk",
+    "grade": "pop",
+    "close_moment": "pan_zoom"
+   },
+   "copy": {
+    "question": "tebak,\nini apa?",
+    "answer": "OAT",
+    "answer_sub": "nggak ada nasinya sama sekali",
+    "cta": "ketipu nggak?\njawab di komen"
+   },
+   "post": {
+    "caption": "jawab jujur, kalian kira ini apa?",
+    "hashtags": "#tebak #oat #nasigoreng"
+   }
+  },
+  {
+   "id": "v10_asmr",
+   "format": "asmr",
+   "angle": "aesthetic",
+   "key": 0,
+   "seed": 4,
+   "opt": {
+    "kit": "minimal",
+    "music": "ambient",
+    "grade": "film",
+    "moments": [
+     "egg",
+     "cabbage",
+     "kecap",
+     "corn",
+     "oat_in"
+    ]
+   },
+   "copy": {},
+   "post": {
+    "caption": "suara masak nasi goreng oat. pakai headphone.",
+    "hashtags": "#asmr #asmrmasak #cookingsounds"
+   }
+  },
+  {
+   "id": "v11_montage_malam",
+   "format": "montage",
+   "angle": "vibe",
+   "key": 1,
+   "seed": 4,
+   "opt": {
+    "kit": "minimal",
+    "music": "house",
+    "grade": "pop",
+    "rotate": 5
+   },
+   "copy": {
+    "line": "masak malam, satu wajan",
+    "end_line": "nasi goreng oat."
+   },
+   "post": {
+    "caption": "makan malam satu wajan.",
+    "hashtags": "#masakmalam #onepan #oat"
+   }
+  },
+  {
+   "id": "v12_timelapse",
+   "format": "timelapse_timer",
+   "angle": "speedrun",
+   "key": -1,
+   "seed": 5,
+   "opt": {
+    "kit": "grotesk",
+    "music": "house",
+    "grade": "clean"
+   },
+   "copy": {
+    "hook": "satu wajan,\ndari awal sampai jadi",
+    "end_line": "selesai."
+   },
+   "post": {
+    "caption": "full proses, dipercepat.",
+    "hashtags": "#timelapse #masak #nasigorengoat"
+   }
+  },
+  {
+   "id": "v13_count_langkah",
+   "format": "ingredient_count",
+   "angle": "langkah",
+   "key": 3,
+   "seed": 6,
+   "opt": {
+    "kit": "bold",
+    "music": "upbeat",
+    "grade": "warm",
+    "hook_moment": "plate_push"
+   },
+   "copy": {
+    "hook": "*7 langkah*,\nsatu wajan",
+    "end_line": "nasi goreng oat."
+   },
+   "post": {
+    "caption": "7 langkah, nggak pakai nasi.",
+    "hashtags": "#resepsimpel #oat #nasigorengoat"
+   }
+  },
+  {
+   "id": "v14_kompilasi",
+   "format": "compilation",
+   "angle": "satisfying",
+   "key": -3,
+   "seed": 7,
+   "opt": {
+    "kit": "rounded",
+    "music": "lofi",
+    "grade": "film",
+    "moments": [
+     "corn",
+     "kecap",
+     "cabbage",
+     "egg",
+     "oat_in"
+    ]
+   },
+   "copy": {
+    "title": "5 momen paling\n*satisfying*",
+    "items": [
+     "jagung manis",
+     "kecap",
+     "hujan kol",
+     "telur",
+     "oatnya masuk"
+    ],
+    "cta": "nomor berapa favoritmu?"
+   },
+   "post": {
+    "caption": "ranking momen paling enak dilihat. setuju?",
+    "hashtags": "#satisfying #kompilasi #masak"
+   }
+  },
+  {
+   "id": "v15_story_kos",
+   "format": "kinetic_story",
+   "angle": "anak-kos",
+   "key": 1,
+   "seed": 8,
+   "opt": {
+    "kit": "editorial",
+    "music": "lofi",
+    "grade": "film",
+    "rotate": 3
+   },
+   "copy": {
+    "lines": [
+     "tanggal tua.",
+     "beras habis.",
+     "yang ada oat sama telur",
+     "plus kol setengah",
+     "ya udah, digoreng aja",
+     "ternyata bisa."
+    ]
+   },
+   "post": {
+    "caption": "tanggal tua edition.",
+    "hashtags": "#anakkos #tanggaltua #masakhemat"
+   }
+  },
+  {
+   "id": "v16_split_proses",
+   "format": "split_compare",
+   "angle": "proses-hasil",
+   "key": 1,
+   "seed": 9,
+   "opt": {
+    "kit": "bold",
+    "music": "upbeat",
+    "grade": "clean",
+    "rotate": 4
+   },
+   "copy": {
+    "top": "PROSES",
+    "bottom": "HASIL",
+    "end_line": "satu wajan."
+   },
+   "post": {
+    "caption": "atas prosesnya, bawah hasilnya.",
+    "hashtags": "#splitscreen #masak #oat"
+   }
+  },
+  {
+   "id": "v17_result_voice",
+   "format": "result_first",
+   "angle": "resep-voice",
+   "key": -2,
+   "seed": 3,
+   "opt": {
+    "kit": "grotesk",
+    "music": "house",
+    "grade": "pop",
+    "hook_moment": "plate_wide",
+    "bpm": 100
+   },
+   "copy": {
+    "hook": "nasi goreng\n*oat*",
+    "reveal_big": "JADI.",
+    "cta": "simpan resepnya"
+   },
+   "vo": {
+    "voice": "em_alex",
+    "speed": 1.12,
+    "lines": [
+     {
+      "text": "Nasi goreng, nasinya oat.",
+      "at": "hook"
+     },
+     {
+      "text": "Cabai, bawang, kol.",
+      "at": "chili"
+     },
+     {
+      "text": "Jagung, bumbu, kecap.",
+      "at": "corn"
+     },
+     {
+      "text": "Telur, baru oat.",
+      "at": "egg"
+     },
+     {
+      "text": "Aduk rata.",
+      "at": "stir_lapse"
+     },
+     {
+      "text": "Jadi deh.",
+      "at": "reveal"
+     }
+    ]
+   },
+   "post": {
+    "caption": "resep lengkap nasi goreng oat, satu wajan.",
+    "hashtags": "#resep #nasigorengoat #oat"
+   },
+   "variant_of": "v01_result_diet",
+   "target_s": 16
+  },
+  {
+   "id": "v18_pov_voice",
+   "format": "pov_story",
+   "angle": "diet-voice",
+   "key": 1,
+   "seed": 5,
+   "opt": {
+    "kit": "minimal",
+    "music": "lofi",
+    "grade": "film",
+    "hook_moment": "corn",
+    "hero_moment": "raw_oats"
+   },
+   "copy": {
+    "lines": [
+     "POV: ngurangin nasi",
+     "nasinya diganti...",
+     "masaknya biasa aja",
+     "telur, kecap",
+     "oat paling akhir"
+    ],
+    "freeze_word": "OAT.",
+    "punch": "KOK MIRIP?",
+    "cta": "komen *OAT*\nbuat resepnya"
+   },
+   "vo": {
+    "voice": "ef_dora",
+    "speed": 1.08,
+    "lines": [
+     {
+      "text": "Diet, tapi ngidam nasi goreng.",
+      "at": "hook"
+     },
+     {
+      "text": "Jadi nasinya kuganti...",
+      "at": "raw_oats"
+     },
+     {
+      "text": "Masaknya kayak biasa aja.",
+      "at": "chili"
+     },
+     {
+      "text": "Jujur, awalnya ragu.",
+      "at": "egg"
+     },
+     {
+      "text": "Eh, kok mirip ya?",
+      "at": "reveal"
+     },
+     {
+      "text": "Mau resepnya? Komen oat.",
+      "at": "end"
+     }
+    ]
+   },
+   "post": {
+    "caption": "ngurangin nasi tapi tetap nasi goreng.",
+    "hashtags": "#diet #nasigorengoat #pov"
+   },
+   "variant_of": "v02_pov_diet",
+   "target_s": 18
+  }
+ ],
+ "max_s": 30
+}

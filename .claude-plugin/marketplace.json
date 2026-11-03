@@ -1,0 +1,14 @@
+{
+  "name": "loopa",
+  "owner": {
+    "name": "Aldo Suhartono Putra",
+    "url": "https://github.com/aldhosutra"
+  },
+  "plugins": [
+    {
+      "name": "loopa",
+      "source": "./plugins/loopa",
+      "description": "Loopa (read \"lupa\": forget hand-editing loops). Turn raw footage into many distinct short videos that loop seamlessly in picture and sound: music-first cyclic soundtrack, AI slow motion, 15 viral formats, Indonesian dubbing."
+    }
+  ]
+}

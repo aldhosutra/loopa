@@ -1,0 +1,211 @@
+{
+ "footage": {
+  "main": {
+   "path": "/abs/path/to/raw_footage.mov",
+   "cuts": [
+    3.8,
+    9.47,
+    15.73,
+    20.63,
+    26.23,
+    31.87,
+    34.73,
+    40.9,
+    43.4,
+    47.6,
+    53.83,
+    56.5,
+    61.43,
+    64.37,
+    71.07,
+    80.3,
+    93.2
+   ]
+  }
+ },
+ "moments": [
+  {
+   "id": "raw_oats",
+   "kind": "before",
+   "a": 0.0,
+   "b": 0.7,
+   "hit": 0.3,
+   "label": "oat kering"
+  },
+  {
+   "id": "oat_toss",
+   "kind": "before",
+   "a": 0.5,
+   "b": 2.6,
+   "hit": 1.75,
+   "label": "sangrai oat"
+  },
+  {
+   "id": "oat_pan",
+   "kind": "before",
+   "a": 3.85,
+   "b": 9.0,
+   "hit": 5.5,
+   "label": "oat di wajan"
+  },
+  {
+   "id": "chili",
+   "kind": "action",
+   "a": 9.5,
+   "b": 12.5,
+   "hit": 10.8,
+   "label": "cabai & bawang",
+   "focus": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "id": "chili_fry",
+   "kind": "process",
+   "a": 16.0,
+   "b": 20.5,
+   "label": "tumis"
+  },
+  {
+   "id": "cabbage",
+   "kind": "action",
+   "a": 26.3,
+   "b": 30.6,
+   "hit": 28.6,
+   "label": "kol",
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "id": "corn",
+   "kind": "action",
+   "a": 31.9,
+   "b": 33.5,
+   "hit": 32.2,
+   "label": "jagung manis",
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "id": "stir_veg",
+   "kind": "process",
+   "a": 34.8,
+   "b": 40.0,
+   "label": "aduk"
+  },
+  {
+   "id": "seasoning",
+   "kind": "action",
+   "a": 41.7,
+   "b": 43.35,
+   "hit": 42.6,
+   "label": "bumbu",
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "id": "kecap",
+   "kind": "action",
+   "a": 53.9,
+   "b": 55.6,
+   "hit": 54.4,
+   "label": "kecap",
+   "focus": [
+    0.5,
+    0.42
+   ]
+  },
+  {
+   "id": "egg",
+   "kind": "action",
+   "a": 57.0,
+   "b": 60.0,
+   "hit": 58.8,
+   "label": "telur",
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "id": "oat_in",
+   "kind": "action",
+   "a": 64.4,
+   "b": 69.4,
+   "hit": 66.0,
+   "label": "OAT",
+   "hero": true
+  },
+  {
+   "id": "stir_lapse",
+   "kind": "process",
+   "a": 71.1,
+   "b": 80.2,
+   "label": "aduk sampai rata"
+  },
+  {
+   "id": "pan_zoom",
+   "kind": "macro",
+   "a": 93.25,
+   "b": 96.0,
+   "label": "close-up wajan"
+  },
+  {
+   "id": "reveal",
+   "kind": "reveal",
+   "a": 96.25,
+   "b": 98.0,
+   "label": "plating, kamera mundur"
+  },
+  {
+   "id": "plate_wide",
+   "kind": "result",
+   "a": 98.0,
+   "b": 99.6,
+   "label": "piring"
+  },
+  {
+   "id": "plate_push",
+   "kind": "result",
+   "a": 98.6,
+   "b": 100.4,
+   "label": "piring, kamera maju"
+  },
+  {
+   "id": "macro",
+   "kind": "macro",
+   "a": 99.9,
+   "b": 100.8,
+   "label": "makro daun (tajam sampai 100.8)"
+  },
+  {
+   "id": "pan_done",
+   "kind": "result",
+   "a": 84.5,
+   "b": 92.5,
+   "label": "wajan selesai"
+  }
+ ],
+ "process_order": [
+  "raw_oats",
+  "oat_toss",
+  "oat_pan",
+  "chili",
+  "chili_fry",
+  "cabbage",
+  "corn",
+  "stir_veg",
+  "seasoning",
+  "kecap",
+  "egg",
+  "oat_in",
+  "stir_lapse"
+ ]
+}

@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+# loopa: one entry point for the skill's tools. Picks the right Python automatically:
+#   $LOOPA_PY  >  ~/.loopa/venv/bin/python (made by install.sh --deps)  >  python3
+#
+#   loopa scan <footage_root> [--exclude a,b]     group clips into units, analyse, draft moments
+#   loopa check <plan.json>                        lengths, loops, scene cuts, diversity
+#   loopa build <plan.json> [--only ids] [--force] [--audio-only]
+#   loopa build-all <workspace> [--merge|--check|--force]
+#   loopa preview <video.mp4> [N]                  N plays back-to-back in one file (how to *watch* a loop)
+#   loopa seam <video.mp4>                         loop seam score, picture + sound
+#   loopa doctor                                   check ffmpeg, python packages, RIFE, TTS, fonts, disk
+set -uo pipefail
+D="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PY="${LOOPA_PY:-}"
+[ -z "$PY" ] && [ -x "$HOME/.loopa/venv/bin/python" ] && PY="$HOME/.loopa/venv/bin/python"
+PY="${PY:-python3}"
+cmd="${1:-help}"; shift || true
+case "$cmd" in
+  scan)       exec "$PY" -I "$D/scan.py" "$@" ;;
+  check)      exec "$PY" -I "$D/build.py" "$1" --check ;;
+  build)      exec "$PY" -I "$D/build.py" "$@" ;;
+  build-all)  exec "$PY" -I "$D/build_all.py" "$@" ;;
+  preview)    exec bash "$D/loop_preview.sh" "$@" ;;
+  seam)       f="$1"; exec bash "$D/loop_check.sh" "$f" "${f%.*}_seam.jpg" ;;
+  sheet)      exec bash "$D/contact_sheet.sh" "$@" ;;
+  doctor)
+    ok=1
+    say() { printf '%-28s %s\n' "$1" "$2"; }
+    command -v ffmpeg >/dev/null && say ffmpeg "ok ($(ffmpeg -version | head -1 | awk '{print $3}'))" || { say ffmpeg "MISSING (brew install ffmpeg / apt install ffmpeg)"; ok=0; }
+    say python "$PY ($("$PY" -c 'import sys; print(sys.version.split()[0])' 2>/dev/null || echo 'not runnable'))"
+    for m in cv2 numpy scipy PIL; do
+      "$PY" -c "import $m" 2>/dev/null && say "  $m" ok || { say "  $m" "MISSING (install.sh --deps)"; ok=0; }
+    done
+    R="${LOOPA_RIFE_PY:-$HOME/.loopa/rife/bin/python}"
+    [ -x "$R" ] && "$R" -c "import rife_ncnn_vulkan_python" 2>/dev/null && say "slow motion (RIFE)" "ok ($R)" || say "slow motion (RIFE)" "not set up: optical-flow fallback (install.sh --with-rife)"
+    T="${LOOPA_TTS_PY:-$HOME/.loopa/tts/bin/python}"
+    [ -x "$T" ] && say "dubbing (Kokoro TTS)" "ok ($T)" || say "dubbing (Kokoro TTS)" "not set up: optional (install.sh --with-tts)"
+    command -v espeak-ng >/dev/null && say "  espeak-ng" ok || say "  espeak-ng" "missing: needed for dubbing (brew install espeak-ng)"
+    "$PY" -I - "$D" <<'PYEOF' 2>/dev/null || true
+import sys; sys.path.insert(0, sys.argv[1])
+from engine import find_font
+want = ['Poppins-Black.ttf', 'Fraunces_72pt_Soft-BlackItalic.ttf', 'Urbanist-ExtraBold.ttf', 'Rubik-Black.ttf', 'Manrope-ExtraBold.ttf']
+have = [w for w in want if find_font(w)]
+print(f"{'fonts':28s} {len(have)}/{len(want)} kit fonts found" + ('' if len(have) == len(want) else ' (missing ones fall back to a system sans; see README)'))
+PYEOF
+    free=$(df -Pk "${HOME}" | awk 'NR==2{printf "%.1f", $4/1048576}')
+    say "free disk" "${free} GB (keep >= 1.5 GB while rendering)"
+    [ "$ok" = 1 ] && echo "ready." || { echo "fix the MISSING items above."; exit 1; } ;;
+  *) sed -n '2,13p' "$0" | sed 's/^# \{0,1\}//' ;;
+esac
